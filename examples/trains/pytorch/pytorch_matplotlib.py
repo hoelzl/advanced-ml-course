@@ -113,8 +113,8 @@ def image_loader(image_name):
     return image.to(device, torch.float)
 
 
-style_img = image_loader(os.path.join("..", "reporting", "data_samples", "picasso.jpg"))
-content_img = image_loader(os.path.join("..", "reporting", "data_samples", "dancing.jpg"))
+style_img = image_loader(os.path.join("examples", "trains", "reporting", "data_samples", "picasso.jpg"))
+content_img = image_loader(os.path.join("examples", "trains", "reporting", "data_samples", "dancing.jpg"))
 
 assert style_img.size() == content_img.size(), \
     "we need to import style and content images of the same size"
