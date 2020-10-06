@@ -13,7 +13,7 @@ task = Task.init(project_name='examples', task_name='Model configuration and upl
 model = torch.nn.Module
 
 # Connect a local configuration file
-config_file = os.path.join('..', '..', 'reporting', 'data_samples', 'sample.json')
+config_file = os.path.join('examples', 'trains', 'reporting', 'data_samples', 'sample.json')
 config_file = task.connect_configuration(config_file)
 # then read configuration as usual, the backend will contain a copy of it.
 # later when executing remotely, the returned `config_file` will be a temporary file
